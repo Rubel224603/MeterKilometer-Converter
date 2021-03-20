@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Meter Kilometer Converter</title>	
+	<link rel="icon" href="me.jpg"/>
+
+</head>
+<body>
+	<h1> Meter Kilometer convert</h1>
+	<input type="number"  id="mterInp" placeholder="meter To Kilometer"/>
+	<input type="number"  id="kmInp"placeholder="Kilometer To meter "/>
+	<input type="button" id="convert" value="convert" />
+	
+	<h2 id="showMtoK"></h2>
+	<h2 id="showKm"></h2>
+	<script type="text/javascript">
+	
+	
+	
+	document.querySelector("#convert").addEventListener("click",function(){
+	
+		var meterValue = document.querySelector("#mterInp").value;
+	
+		var KmValue = document.querySelector("#kmInp").value;
+	
+		var MeterCon = meterValue/1000;
+		
+		document.querySelector("#showMtoK").innerHTML=MeterCon+" Kilo Meter";
+		
+		
+		
+		var KmConv=KmValue*1000;
+		
+		document.querySelector("#showKm").innerHTML=KmConv+" Meter";
+		
+		
+
+		
+		
+		
+		
+		
+		<!-- var MeteCon =	KmValue/1000; -->
+		<!-- document.querySelector("#show").innerHTML=MeteCon+" Kilo Meter"; -->
+		<!-- document.querySelector("#showKm").innerHTML=KmCon+" meter"; -->
+		
+	});
+	</script>
+</body>
+</html>
